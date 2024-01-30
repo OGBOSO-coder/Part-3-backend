@@ -1,6 +1,5 @@
 const express = require("express")
 const app = express()
-//const PORT = 3001
 app.use(express.json())
 const cors = require('cors')
 app.use(cors())
@@ -100,5 +99,5 @@ app.post("/api/persons", (req,res) => {
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
-  console.log(`Server running on port jeppis ${PORT}`)
+  console.log(`Server running on port ${PORT}`)
 })
