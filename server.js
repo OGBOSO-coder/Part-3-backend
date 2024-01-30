@@ -2,6 +2,8 @@ const express = require("express")
 const app = express()
 //const PORT = 3001
 app.use(express.json())
+const cors = require('cors')
+app.use(cors())
 
 const morgan = require(`morgan`)
 app.use(morgan(`tiny`))
